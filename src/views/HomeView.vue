@@ -58,8 +58,8 @@ p {
   height: 280px;
   background: transparent;
   border-radius: 50%;
-  border: 20px solid red;
-  box-shadow: 0px 0px 90px 20px rgb(214, 24, 176);
+  border: 10px solid var(--button);
+  box-shadow: 0px 0px 50px 10px var(--button);
 }
 .picture {
   position: relative;
@@ -87,8 +87,9 @@ h2 {
   height: 300px;
   margin: 2rem 0;
   overflow: hidden;
-  background: red;
-  border-radius: 10px;
+  background: var(--secondary);
+  border-radius: 30px;
+  border: 5px solid var(--button);
 }
 
 .model {

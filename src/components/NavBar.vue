@@ -1,7 +1,7 @@
 <template>
-  <header @click="showNav = !showNav">
+  <header>
     <h1>Ready To Fit</h1>
-    <span class="material-symbols-outlined menu-btn"> menu </span>
+    <span @click="showNav = !showNav" class="material-symbols-outlined menu-btn"> menu </span>
   </header>
   <nav v-if="showNav" class="sidebar">
     <ul class="list">
@@ -50,11 +50,14 @@ export default {
 /* ======== Header ======= */
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(183, 159, 159);
   height: 15vh;
+  z-index: 1;
+  background: var(--secondary);
 }
 
 h1 {
@@ -73,7 +76,7 @@ h1 {
   right: 0;
   width: 260px;
   height: 100%;
-  background: red;
+  background: var(--secondary);
   padding: 6px 14px;
   z-index: 1;
 }

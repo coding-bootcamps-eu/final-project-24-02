@@ -14,7 +14,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: var(--primary);
+}
 button {
   background-color: var(--button);
   color: var(--text);
@@ -25,4 +27,17 @@ button {
 h1,
 h2 {
   font-family: 'Titan One', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  transition: border-bottom 0.3s ease-in-out;
 }
