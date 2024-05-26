@@ -75,6 +75,7 @@ h1 {
   height: 100%;
   background: red;
   padding: 6px 14px;
+  z-index: 1;
 }
 
 .sidebar .logo-menu {
