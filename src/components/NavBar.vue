@@ -1,13 +1,9 @@
 <template>
-  <header>
+  <header @click="showNav = !showNav">
     <h1>Ready To Fit</h1>
     <span class="material-symbols-outlined menu-btn"> menu </span>
   </header>
-  <!-- <nav class="sidebar">
-    <div class="logo-menu">
-      <h2 class="logo">Ready To Fit</h2>
-      <span class="material-symbols-outlined toggle-btn"> menu </span>
-    </div>
+  <nav v-if="showNav" class="sidebar">
     <ul class="list">
       <li class="list-item active">
         <a href="#">
@@ -37,11 +33,17 @@
         </a>
       </li>
     </ul>
-  </nav> -->
+  </nav>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      showNav: false
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -51,7 +53,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: red;
+  background: rgb(183, 159, 159);
   height: 15vh;
 }
 
@@ -68,7 +70,6 @@ h1 {
 /* ========= SideBar ========= */
 .sidebar {
   position: fixed;
-  top: 0;
   right: 0;
   width: 260px;
   height: 100%;
