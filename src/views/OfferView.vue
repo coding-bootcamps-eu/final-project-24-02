@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="header-title">
     <h1>Offer</h1>
   </article>
 
@@ -19,11 +19,30 @@
       <p>70€</p>
       <h3>Yearly</h3>
     </div>
+
+    <div class="footer-btn">
+      <button @click="back">Back</button>
+      <button @click="next">Next</button>
+    </div>
   </main>
+  <div>
+    <a href="#header-title">
+      <span class="material-symbols-outlined"> keyboard_double_arrow_up </span>
+    </a>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    back() {
+      this.$router.go(-1)
+    },
+    next() {
+      this.$router.push('/form')
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -85,5 +104,23 @@ main {
   width: 100%;
   font-family: 'Titan One', sans-serif;
   text-align: center;
+}
+
+.material-symbols-outlined {
+  display: block;
+  text-align: center;
+  margin: 0.5rem 0;
+  color: var(--text);
+}
+
+.footer-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+button {
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
 }
 </style>

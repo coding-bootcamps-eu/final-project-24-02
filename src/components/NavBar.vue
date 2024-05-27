@@ -74,7 +74,7 @@ h1 {
 .sidebar {
   position: fixed;
   right: 0;
-  width: 260px;
+  width: 100%;
   height: 100%;
   background: var(--secondary);
   padding: 6px 14px;
