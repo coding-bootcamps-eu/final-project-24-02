@@ -3,7 +3,6 @@
     <p>
       © All Rights Reserved By
       <a href="https://github.com/mohammadshirazi040" target="_blank">M.Shirazi</a>
-      <span class="material-symbols-outlined"> keyboard_double_arrow_up </span>
     </p>
   </footer>
 </template>
@@ -38,12 +37,5 @@ a:hover {
 
 a:active {
   color: #4f1de4;
-}
-
-.material-symbols-outlined {
-  display: block;
-  text-align: center;
-  margin-top: 0.5rem;
-  color: var(--text);
 }
 </style>

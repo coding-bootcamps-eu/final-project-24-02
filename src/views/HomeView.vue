@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>
+    <h1 id="header-title">
       Train <br />
       Without <br />Limit
     </h1>
@@ -35,6 +35,11 @@
       </router-link>
     </section>
   </main>
+  <div>
+    <a href="#header-title">
+      <span class="material-symbols-outlined"> keyboard_double_arrow_up </span>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -107,5 +112,12 @@ h2 {
 
 .model {
   width: 100%;
+}
+
+.material-symbols-outlined {
+  display: block;
+  text-align: center;
+  margin: 0.5rem 0;
+  color: var(--text);
 }
 </style>
