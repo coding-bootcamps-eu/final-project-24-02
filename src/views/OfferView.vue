@@ -5,9 +5,7 @@
 
   <main>
     <div class="box">
-      <div>
-        <h2>For Roockies</h2>
-      </div>
+      <h2>For Roockies</h2>
       <p>10€</p>
       <h3>Daily</h3>
     </div>

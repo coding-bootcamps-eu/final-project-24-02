@@ -16,15 +16,23 @@
     <section id="trainer" class="section2">
       <h2>Wild Programs</h2>
 
-      <div class="box">
-        <img class="model" src="../assets/img/fitmodel.svg" alt="" />
-      </div>
-      <div class="box">
-        <img class="model" src="../assets/img/thaimodel.svg" alt="" />
-      </div>
-      <div class="box">
-        <img class="model" src="../assets/img/yogamodel.svg" alt="" />
-      </div>
+      <router-link to="/offer">
+        <div class="box">
+          <img class="model" src="../assets/img/fitmodel.svg" alt="" />
+        </div>
+      </router-link>
+
+      <router-link to="/offer">
+        <div class="box">
+          <img class="model" src="../assets/img/thaimodel.svg" alt="" />
+        </div>
+      </router-link>
+
+      <router-link to="/offer">
+        <div class="box">
+          <img class="model" src="../assets/img/yogamodel.svg" alt="" />
+        </div>
+      </router-link>
     </section>
   </main>
 </template>
@@ -91,6 +99,10 @@ h2 {
   background: var(--secondary);
   border-radius: 30px;
   border: 5px solid var(--button);
+  transition: transform 0.4s ease-in;
+}
+.box:hover {
+  transform: scale(1.1);
 }
 
 .model {

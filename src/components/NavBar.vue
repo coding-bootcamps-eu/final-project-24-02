@@ -1,11 +1,11 @@
 <template>
   <header>
-    <h1>Ready To Fit</h1>
+    <router-link to="/"> <h1>Ready To Fit</h1> </router-link>
     <span @click="showNav = !showNav" class="material-symbols-outlined menu-btn"> menu </span>
   </header>
   <nav v-if="showNav" class="sidebar">
     <ul class="list">
-      <li class="list-item active">
+      <li class="list-item">
         <router-link to="/">
           <span class="material-symbols-outlined icons"> home </span>
           <span class="link-name">Home</span>
