@@ -6,10 +6,10 @@
   <nav v-if="showNav" class="sidebar">
     <ul class="list">
       <li class="list-item active">
-        <a href="#">
+        <router-link to="/">
           <span class="material-symbols-outlined icons"> home </span>
           <span class="link-name">Home</span>
-        </a>
+        </router-link>
       </li>
 
       <li class="list-item">
@@ -20,17 +20,17 @@
       </li>
 
       <li class="list-item">
-        <a href="#">
+        <a href="#trainer">
           <span class="material-symbols-outlined icons"> person </span>
           <span class="link-name">Trainer</span>
         </a>
       </li>
 
       <li class="list-item">
-        <a href="#">
+        <router-link to="/offer">
           <span class="material-symbols-outlined icons"> currency_bitcoin </span>
           <span class="link-name">Price</span>
-        </a>
+        </router-link>
       </li>
     </ul>
   </nav>

@@ -13,8 +13,9 @@
       <img class="model1" src="../assets/img/model.svg" alt="" />
     </div>
 
-    <section class="section2">
-      <h2>Personal Trainer</h2>
+    <section id="trainer" class="section2">
+      <h2>Wild Programs</h2>
+
       <div class="box">
         <img class="model" src="../assets/img/fitmodel.svg" alt="" />
       </div>
