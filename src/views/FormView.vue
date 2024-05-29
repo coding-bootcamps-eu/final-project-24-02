@@ -13,7 +13,10 @@
         <option value="For Wild Gymers" selected>For Wild Gymers</option>
         <option value="For Gym Freaks">For Gym Freaks</option>
       </select>
-      <router-link to="/user/1"> <button @click.prevent="addUser">Submit</button> </router-link>
+
+      <router-link class="footer-btn" to="/user">
+        <button @click="update">Submit</button>
+      </router-link>
     </form>
 
     <div class="footer-btn">
@@ -29,6 +32,7 @@
 </template>
 
 <script>
+import { useUserStore } from '@/stores/userStore'
 export default {
   data() {
     return {
@@ -37,22 +41,21 @@ export default {
           firstname: '',
           lastname: '',
           email: '',
-          selectedoptions: '',
-          id: '1'
+          selectedoptions: ''
         }
       ]
     }
   },
   methods: {
-    addUser() {
-      const newUser = {
-        firstname: this.firstname,
-        lastname: this.lastname,
-        email: this.email,
-        selectedoptions: this.selectedoptions,
-        id: Math.random() * Date.now()
-      }
-      this.users.push(newUser)
+    update() {
+      // update pinia store
+      const store = useUserStore()
+      return (
+        store.updateFirstName(this.users.firstname),
+        store.updateLastName(this.users.lastname),
+        store.updateEmail(this.users.email),
+        store.selectedOptions(this.users.selectedoptions)
+      )
     },
     back() {
       this.$router.go(-1)
@@ -91,7 +94,7 @@ h2 {
 .footer-btn {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 button {

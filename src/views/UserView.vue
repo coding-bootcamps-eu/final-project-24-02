@@ -1,31 +1,28 @@
 <template>
-  <div>
-    <h3>Welcome to your Page</h3>
-    <p>Your id is: {{ $route.params.id }}</p>
-    <p>{{ users.firstname }}</p>
-  </div>
+  <h1>{{ welcome }}</h1>
 
-  <ul>
-    <!-- <li v-for="user of users" :key="user.id">
-      {{ users.firstname }}
-      {{ users.lastname }}
-      {{ users.email }}
-      {{ users.selectedoptions }}
-    </li> -->
-  </ul>
+  <p>{{ firstname }}</p>
+  <p>{{ lastname }}</p>
+  <p>{{ email }}</p>
+  <p>{{ selectedoptions }}</p>
 </template>
 
 <script>
-export default {}
+import { useUserStore } from '@/stores/userStore'
+export default {
+  setup() {
+    const store = useUserStore()
+    store.updateWelcomeMsg('Welcome to your Page !')
+
+    return {
+      welcome: store.users[0].welcomeMsg,
+      firstname: store.users[0].firstname,
+      lastname: store.users[0].lastname,
+      email: store.users[0].email,
+      selectedoptions: store.users[0].selectedoptions
+    }
+  }
+}
 </script>
 
-<style scoped>
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 50vh;
-  background: red;
-}
-</style>
+<style scoped></style>
