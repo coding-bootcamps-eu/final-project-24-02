@@ -6,30 +6,44 @@
   <nav v-if="showNav" class="sidebar">
     <ul class="list">
       <li class="list-item">
-        <router-link to="/">
+        <router-link @click="showNav = !showNav" to="/">
           <span class="material-symbols-outlined icons"> home </span>
           <span class="link-name">Home</span>
         </router-link>
       </li>
 
       <li class="list-item">
-        <a href="#">
+        <a @click="showNav = !showNav" href="#trainer">
+          <span class="material-symbols-outlined icons"> shopping_cart </span>
+          <span class="link-name">Shop</span>
+        </a>
+      </li>
+
+      <li class="list-item">
+        <a @click="showNav = !showNav" href="#">
           <span class="material-symbols-outlined icons"> search </span>
           <span class="link-name">About</span>
         </a>
       </li>
 
       <li class="list-item">
-        <a href="#trainer">
+        <a @click="showNav = !showNav" href="#trainer">
           <span class="material-symbols-outlined icons"> person </span>
           <span class="link-name">Trainer</span>
         </a>
       </li>
 
       <li class="list-item">
-        <router-link to="/offer">
+        <router-link @click="showNav = !showNav" to="/offer">
           <span class="material-symbols-outlined icons"> currency_bitcoin </span>
           <span class="link-name">Price</span>
+        </router-link>
+      </li>
+
+      <li class="list-item">
+        <router-link @click="showNav = !showNav" to="/login">
+          <span class="material-symbols-outlined icons"> login </span>
+          <span class="link-name">Login</span>
         </router-link>
       </li>
     </ul>

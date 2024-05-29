@@ -6,22 +6,17 @@
   </div>
 
   <ul>
-    <li v-for="user of users" :key="user.id">
+    <!-- <li v-for="user of users" :key="user.id">
       {{ users.firstname }}
       {{ users.lastname }}
       {{ users.email }}
       {{ users.selectedoptions }}
-    </li>
+    </li> -->
   </ul>
 </template>
 
 <script>
-import UserData from '@/components/UserData.vue'
-export default {
-  components: {
-    UserData
-  }
-}
+export default {}
 </script>
 
 <style scoped>
