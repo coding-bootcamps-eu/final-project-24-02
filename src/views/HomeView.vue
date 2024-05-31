@@ -112,9 +112,11 @@ h3 {
   margin: 2rem 0;
   overflow: hidden;
   background: var(--secondary);
-  border-radius: 30px;
   border: 5px solid var(--button);
   transition: transform 0.4s ease-in;
+  /* border-radius: 30px; */
+  border-radius: 50% 10%;
+  /* border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%; */
 }
 
 .box:hover {

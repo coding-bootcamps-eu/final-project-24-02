@@ -5,12 +5,12 @@
 
   <main>
     <form>
-      <input v-model="users.firstname" type="text" placeholder="Enter your firstname" />
-      <input v-model="users.lastname" type="text" placeholder="Enter your lastname" />
-      <input v-model="users.email" type="email" placeholder="Enter your email" />
-      <select v-model="users.selectedoptions" id="options" name="options">
-        <option value="For Roockies">For Roockies</option>
-        <option value="For Wild Gymers" selected>For Wild Gymers</option>
+      <input required v-model="users.firstname" type="text" placeholder="Enter your firstname" />
+      <input required v-model="users.lastname" type="text" placeholder="Enter your lastname" />
+      <input required v-model="users.email" type="email" placeholder="Enter your email" />
+      <select required v-model="users.selectedoptions" id="options" name="options">
+        <option value="For Rookies">For Rookies</option>
+        <option value="For Wild Gymers">For Wild Gymers</option>
         <option value="For Gym Freaks">For Gym Freaks</option>
       </select>
 

@@ -54,7 +54,7 @@ form {
   position: relative;
   border: 2px solid var(--button);
   position: relative;
-  height: 400px;
+  height: 450px;
   width: 100%;
 }
 

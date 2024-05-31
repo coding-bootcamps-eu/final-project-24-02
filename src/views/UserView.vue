@@ -1,10 +1,27 @@
 <template>
-  <h1>{{ welcome }}</h1>
+  <main>
+    <h2>{{ welcome }}</h2>
 
-  <p>{{ firstname }}</p>
-  <p>{{ lastname }}</p>
-  <p>{{ email }}</p>
-  <p>{{ selectedoptions }}</p>
+    <table>
+      <tr>
+        <th>Firstname:</th>
+        <td>{{ firstname }}</td>
+      </tr>
+      <tr>
+        <th>Lastname:</th>
+        <td>{{ lastname }}</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>{{ email }}</td>
+      </tr>
+      <tr>
+        <th>Option:</th>
+        <td>{{ selectedoptions }}</td>
+      </tr>
+    </table>
+    <button @click="redirect">Back to Home</button>
+  </main>
 </template>
 
 <script>
@@ -21,8 +38,57 @@ export default {
       email: store.users[0].email,
       selectedoptions: store.users[0].selectedoptions
     }
+  },
+  methods: {
+    redirect() {
+      this.$router.push('/')
+    }
   }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+h2 {
+  margin-bottom: 3rem;
+}
+
+table {
+  border: 2px solid var(--text);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 2px solid var(--button);
+  padding: 20px 10px;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+th {
+  text-align: left;
+  width: 20px;
+}
+
+td {
+  text-align: center;
+}
+
+button {
+  margin: 2rem 0;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+</style>
