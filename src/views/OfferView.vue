@@ -4,20 +4,85 @@
   </article>
 
   <main>
+    <!-- box 1  -->
+
     <div class="box">
-      <h2>For Roockies</h2>
-      <p>10€</p>
-      <h3>Daily</h3>
+      <h3>Silver</h3>
+      <p>$20</p>
+      <section>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Access to Fitness</span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span> Limited hours per week</span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Use of general facilities </span>
+        </div>
+      </section>
+
+      <h2>For Rookies</h2>
     </div>
+
+    <!-- box 2  -->
+
     <div class="box">
+      <h3>Gold</h3>
+      <p>$40</p>
+      <section>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Everything in the Silver Offer</span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Unlimited course access</span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Additional weekly personal training </span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Access to member areas </span>
+        </div>
+      </section>
+
       <h2>For Wild Gymers</h2>
-      <p>40€</p>
-      <h3>Monthly</h3>
     </div>
+
+    <!-- box 3  -->
+
     <div class="box">
+      <h3>Diamond</h3>
+      <p>$70</p>
+      <section>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Everything in the Gold Offer</span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Premium course access</span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Weekly nutritional counseling </span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>Access to wellness facilities</span>
+        </div>
+        <div class="offer-check">
+          <span class="material-symbols-outlined check"> check </span>
+          <span>VIP parking and priority access </span>
+        </div>
+      </section>
+
       <h2>For Gym Freaks</h2>
-      <p>70€</p>
-      <h3>Yearly</h3>
     </div>
 
     <div class="footer-btn">
@@ -70,39 +135,65 @@ main {
 
 .box {
   width: 300px;
-  height: 300px;
+  height: 500px;
   margin: 2rem 0;
-  overflow: hidden;
   background: var(--secondary);
   border-radius: 30px;
   border: 5px solid var(--button);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 1rem;
+  transition: transform 0.4s ease-in;
 }
 
-.box p {
+.box:hover {
+  transform: scale(1.1);
+}
+.box h3 {
+  height: 10vh;
+  margin-top: 2rem;
   font-size: 2rem;
-  width: 100%;
-  font-family: 'Titan One', sans-serif;
-  text-align: center;
-  border-bottom: 3px solid var(--button);
-  border-top: 3px solid var(--button);
-  padding: 1rem;
+}
+.box p {
+  height: 5vh;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   color: var(--button);
 }
 
-.box h2 {
+.box section {
+  height: 30vh;
   width: 100%;
-  font-family: 'Titan One', sans-serif;
-  text-align: center;
-  padding: 1rem;
+}
+span {
+  margin-left: 1rem;
 }
 
-.box h3 {
+.box h2 {
+  height: 5vh;
+  margin-top: 2rem;
+  background: var(--button);
+  color: var(--secondary);
   width: 100%;
-  font-family: 'Titan One', sans-serif;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.offer-check {
+  color: aliceblue;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+
+.check {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background: var(--button);
   text-align: center;
 }
 

@@ -27,13 +27,6 @@
       </li>
 
       <li class="list-item">
-        <a @click="showNav = !showNav" href="#trainer">
-          <span class="material-symbols-outlined icons"> person </span>
-          <span class="link-name">Trainer</span>
-        </a>
-      </li>
-
-      <li class="list-item">
         <router-link @click="showNav = !showNav" to="/offer">
           <span class="material-symbols-outlined icons"> currency_bitcoin </span>
           <span class="link-name">Price</span>

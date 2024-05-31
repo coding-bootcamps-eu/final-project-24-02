@@ -65,6 +65,7 @@ table {
   border: 2px solid var(--text);
   border-collapse: collapse;
   width: 100%;
+  box-shadow: 1px 1px 15px var(--button);
 }
 
 td,
@@ -73,6 +74,7 @@ th {
   padding: 20px 10px;
   color: var(--text);
   font-size: 1.2rem;
+  box-shadow: 1px 1px 10px var(--button);
 }
 
 th {

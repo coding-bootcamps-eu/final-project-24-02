@@ -5,8 +5,9 @@
       Without <br />Limit
     </h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, helmy sicle chers lmkie
-      eius.
+      Training involves regularly engaging in physical exercises to improve strength, endurance,
+      <br />
+      and overall fitness while also promoting <br />well-being and health.
     </p>
     <div class="picture">
       <div class="circle"></div>
@@ -15,25 +16,44 @@
 
     <section id="trainer" class="section2">
       <h2>Wild Programs</h2>
+      <p>
+        In our gym, we offer three courses: Fitness to enhance strength and endurance, MMA for
+        <br />
+        versatile combat sports training, and Yoga <br />to promote flexibility and inner balance.
+      </p>
 
-      <h3>Fitness</h3>
       <router-link to="/offer">
-        <div class="box">
-          <img class="model" src="../assets/img/fitmodel.svg" alt="" />
+        <div class="container">
+          <div class="box">
+            <img class="model" src="../assets/img/fitmodel.svg" alt="" />
+          </div>
+          <h3>Fitness</h3>
+          <p>
+            Fitness encompasses physical activities and lifestyle choices aimed at improving health
+            and overall well-being.
+          </p>
         </div>
       </router-link>
 
-      <h3>Martial Arts</h3>
       <router-link to="/offer">
-        <div class="box">
-          <img class="model" src="../assets/img/thaimodel.svg" alt="" />
+        <div class="container">
+          <div class="box">
+            <img class="model" src="../assets/img/thaimodel.svg" alt="" />
+          </div>
+          <h3>Mixed Martial Arts</h3>
+          <p>MMA is a versatile combat sport that combines techniques from various disciplines.</p>
         </div>
       </router-link>
 
-      <h3>Yoga</h3>
       <router-link to="/offer">
-        <div class="box">
-          <img class="model" src="../assets/img/yogamodel.svg" alt="" />
+        <div class="container">
+          <div class="box">
+            <img class="model" src="../assets/img/yogamodel.svg" alt="" />
+          </div>
+          <h3>Yoga</h3>
+          <p>
+            Yoga is a practice that combines physical postures, breathing exercises, and meditation.
+          </p>
         </div>
       </router-link>
     </section>
@@ -89,32 +109,49 @@ p {
   top: 0;
 }
 
-.section2 {
-  min-height: 100vh;
-}
 h2 {
   margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 h3 {
-  color: var(--text);
+  color: var(--button);
   text-align: center;
   font-size: 1.5rem;
+  margin: 1rem;
 }
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: var(--secondary);
+  border-radius: 30px;
+  width: 335px;
+  height: 450px;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
 .box {
   width: 300px;
   height: 300px;
-  margin: 2rem 0;
+  margin: 1rem;
   overflow: hidden;
   background: var(--secondary);
   border: 5px solid var(--button);
   transition: transform 0.4s ease-in;
-  /* border-radius: 30px; */
   border-radius: 50% 10%;
   /* border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%; */
 }
