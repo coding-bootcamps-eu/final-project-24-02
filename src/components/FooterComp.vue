@@ -32,10 +32,10 @@ a:visited {
   color: var(--button);
 }
 a:hover {
-  border-bottom: 2px solid #592be0;
+  border-bottom: 1px solid var(--button);
 }
 
 a:active {
-  color: #4f1de4;
+  color: var(--text);
 }
 </style>
