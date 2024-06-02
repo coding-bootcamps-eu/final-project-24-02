@@ -14,7 +14,7 @@
       </div>
       <button>Login</button>
 
-      <p>Dont have an account? Register</p>
+      <p>Dont have an account? <span>Register</span></p>
     </form>
   </main>
 </template>
@@ -26,11 +26,11 @@ export default {}
 <style scoped>
 article {
   position: absolute;
-  top: 150px;
+  top: 130px;
 }
 
 h2 {
-  margin: 1rem 0;
+  margin: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
@@ -54,15 +54,23 @@ form {
   position: relative;
   border: 2px solid var(--button);
   position: relative;
-  height: 450px;
+  height: 480px;
   width: 100%;
 }
 
+form p {
+  margin-top: 1rem;
+}
+
+form p span {
+  cursor: pointer;
+}
 .remember-forgot {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 300px;
+  margin: 1rem;
 }
 
 label {
@@ -101,5 +109,12 @@ button {
   height: 40px;
   font-size: 1.2rem;
   margin: 1rem 0;
+}
+
+@media only screen and (min-width: 500px) {
+  form {
+    height: 480px;
+    max-width: 400px;
+  }
 }
 </style>
