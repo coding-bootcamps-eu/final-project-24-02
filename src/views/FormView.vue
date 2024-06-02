@@ -77,12 +77,14 @@ article {
   justify-content: center;
   align-items: center;
   height: 10vh;
+  margin: 2rem;
 }
 
 h2 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
+  font-size: 2rem;
 }
 .material-symbols-outlined {
   display: block;
@@ -149,5 +151,24 @@ select {
 select:focus {
   outline: none;
   box-shadow: 0 0 8px var(--button);
+}
+
+@media only screen and (min-width: 650px) {
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  form {
+    max-width: 600px;
+  }
+  .footer-btn {
+    max-width: 600px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 </style>

@@ -59,6 +59,7 @@ main {
 }
 h2 {
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 table {
@@ -92,5 +93,14 @@ button {
   height: 50px;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 650px) {
+  table {
+    max-width: 600px;
+  }
+  button {
+    max-width: 600px;
+  }
 }
 </style>

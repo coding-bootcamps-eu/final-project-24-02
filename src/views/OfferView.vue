@@ -117,6 +117,7 @@ article {
   justify-content: center;
   align-items: center;
   height: 10vh;
+  margin: 2rem;
 }
 
 h1 {
@@ -133,7 +134,7 @@ main {
 .box {
   width: 300px;
   height: 500px;
-  margin: 2rem 1rem;
+  margin: 1rem;
   background: var(--secondary);
   border-radius: 30px;
   border: 5px solid var(--button);
@@ -205,6 +206,7 @@ span {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  margin: 2rem 0 0 0;
 }
 
 button {
@@ -213,9 +215,6 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  article {
-    margin: 1rem;
-  }
   h1 {
     font-size: 3rem;
   }
@@ -228,9 +227,6 @@ button {
 }
 
 @media only screen and (min-width: 890px) {
-  article {
-    margin: 2rem;
-  }
   h1 {
     font-size: 3.5rem;
   }
