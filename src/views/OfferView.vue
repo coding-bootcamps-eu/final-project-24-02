@@ -5,84 +5,85 @@
 
   <main>
     <!-- box 1  -->
+    <div class="box-container">
+      <div class="box">
+        <h3>Silver</h3>
+        <p>$20</p>
+        <section>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Access to Fitness</span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span> Limited hours per week</span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Use of general facilities </span>
+          </div>
+        </section>
 
-    <div class="box">
-      <h3>Silver</h3>
-      <p>$20</p>
-      <section>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Access to Fitness</span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span> Limited hours per week</span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Use of general facilities </span>
-        </div>
-      </section>
+        <h2>For Rookies</h2>
+      </div>
 
-      <h2>For Rookies</h2>
-    </div>
+      <!-- box 2  -->
 
-    <!-- box 2  -->
+      <div class="box">
+        <h3>Gold</h3>
+        <p>$40</p>
+        <section>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Everything in the Silver Offer</span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Unlimited course access</span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Additional weekly personal training </span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Access to member areas </span>
+          </div>
+        </section>
 
-    <div class="box">
-      <h3>Gold</h3>
-      <p>$40</p>
-      <section>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Everything in the Silver Offer</span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Unlimited course access</span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Additional weekly personal training </span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Access to member areas </span>
-        </div>
-      </section>
+        <h2>For Wild Gymers</h2>
+      </div>
 
-      <h2>For Wild Gymers</h2>
-    </div>
+      <!-- box 3  -->
 
-    <!-- box 3  -->
+      <div class="box">
+        <h3>Diamond</h3>
+        <p>$70</p>
+        <section>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Everything in the Gold Offer</span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Premium course access</span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Weekly nutritional counseling </span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>Access to wellness facilities</span>
+          </div>
+          <div class="offer-check">
+            <span class="material-symbols-outlined check"> check </span>
+            <span>VIP parking and priority access </span>
+          </div>
+        </section>
 
-    <div class="box">
-      <h3>Diamond</h3>
-      <p>$70</p>
-      <section>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Everything in the Gold Offer</span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Premium course access</span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Weekly nutritional counseling </span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>Access to wellness facilities</span>
-        </div>
-        <div class="offer-check">
-          <span class="material-symbols-outlined check"> check </span>
-          <span>VIP parking and priority access </span>
-        </div>
-      </section>
-
-      <h2>For Gym Freaks</h2>
+        <h2>For Gym Freaks</h2>
+      </div>
     </div>
 
     <div class="footer-btn">
@@ -119,11 +120,7 @@ article {
 }
 
 h1 {
-  margin-top: 1rem;
-  font-size: 2.7rem;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
+  font-size: 2.5rem;
 }
 
 main {
@@ -136,7 +133,7 @@ main {
 .box {
   width: 300px;
   height: 500px;
-  margin: 2rem 0;
+  margin: 2rem 1rem;
   background: var(--secondary);
   border-radius: 30px;
   border: 5px solid var(--button);
@@ -213,5 +210,46 @@ span {
 button {
   padding: 1rem 3rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  article {
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  article {
+    margin: 2rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .box {
+    width: 260px;
+    height: 470px;
+  }
+  .box h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .box {
+    width: 300px;
+    height: 500px;
+  }
+  .box h2 {
+    font-size: 1.6rem;
+  }
 }
 </style>
