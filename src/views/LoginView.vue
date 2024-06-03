@@ -56,6 +56,7 @@ form {
   position: relative;
   height: 480px;
   width: 100%;
+  border-radius: 30px;
 }
 
 form p {

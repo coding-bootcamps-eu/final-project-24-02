@@ -22,7 +22,21 @@ footer {
 }
 
 a {
-  transition: border-bottom 0.3s ease-in-out;
+  position: relative;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--button);
+  transition: 0.5s;
+}
+a:hover::before {
+  width: 100%;
 }
 
 a:link {

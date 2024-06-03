@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header-mobile">
     <router-link to="/"> <h1>Ready To Fit</h1> </router-link>
     <span @click="showNav = !showNav" class="material-symbols-outlined menu-btn"> menu </span>
   </header>
@@ -55,8 +55,7 @@ export default {
 
 <style scoped>
 /* ======== Header ======= */
-
-header {
+.header-mobile {
   position: sticky;
   top: 0;
   display: flex;
@@ -148,5 +147,17 @@ h1 {
   height: 60px;
   text-align: center;
   line-height: 60px;
+}
+
+@media only screen and (min-width: 890px) {
+  nav {
+    display: none;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .header-mobile {
+    display: none;
+  }
 }
 </style>

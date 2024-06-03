@@ -134,7 +134,7 @@ main {
 .box {
   width: 300px;
   height: 500px;
-  margin: 1rem;
+  margin: 2rem 0;
   background: var(--secondary);
   border-radius: 30px;
   border: 5px solid var(--button);
@@ -233,6 +233,7 @@ button {
   .box {
     width: 260px;
     height: 470px;
+    margin: 1rem;
   }
   .box h2 {
     font-size: 1.4rem;

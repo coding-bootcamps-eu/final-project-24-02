@@ -20,7 +20,8 @@
         <td>{{ selectedoptions }}</td>
       </tr>
     </table>
-    <button @click="redirect">Back to Home</button>
+    <button class="redirect" @click="redirect">Back to Home</button>
+    <button class="back" @click="back">Back</button>
   </main>
 </template>
 
@@ -42,6 +43,9 @@ export default {
   methods: {
     redirect() {
       this.$router.push('/')
+    },
+    back() {
+      this.$router.go(-1)
     }
   }
 }
@@ -87,11 +91,17 @@ td {
   text-align: center;
 }
 
-button {
-  margin: 2rem 0;
+.redirect {
+  margin: 2rem 0 0 0;
   width: 100%;
   height: 50px;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.back {
+  width: 100%;
+  height: 50px;
+  margin: 1rem;
   font-size: 1.2rem;
 }
 
