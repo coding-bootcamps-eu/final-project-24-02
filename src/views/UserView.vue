@@ -57,13 +57,15 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 75vh;
+  min-height: 75vh;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 h2 {
+  margin-top: 1rem;
   margin-bottom: 3rem;
   font-size: 2rem;
+  text-align: center;
 }
 
 table {

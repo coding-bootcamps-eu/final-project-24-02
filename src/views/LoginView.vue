@@ -113,8 +113,11 @@ button {
 }
 
 @media only screen and (min-width: 500px) {
+  h2 {
+    margin: 4rem;
+  }
   form {
-    height: 480px;
+    height: 500px;
     max-width: 400px;
   }
 }
