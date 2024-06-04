@@ -2,7 +2,6 @@
   <main>
     <section>
       <h1>About Us</h1>
-      <h2>Welcome to Ready To Fit Gym</h2>
       <p>
         Welcome to Ready To Fit. At Ready To Fit Gym we offer a unique combination of yoga, fitness
         and MMA training tailored to your individual needs and goals. Our goal is to help you get
@@ -63,7 +62,8 @@ ul {
   margin: 2rem 0 2rem 0;
 }
 li {
-  color: var(--text);
+  color: black;
+  font-weight: 500;
   margin: 1rem;
 }
 
@@ -71,21 +71,21 @@ h1 {
   text-align: center;
   font-size: 3rem;
   margin: 2rem;
-}
-h2 {
-  text-align: center;
-  margin: 2rem;
-  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 h3 {
   text-align: center;
   font-size: 1.5rem;
   margin: 2rem;
+  letter-spacing: 2px;
 }
 
 p {
   margin: 1rem;
+  color: black;
+  font-weight: 900;
+  line-height: 25px;
 }
 
 @media only screen and (max-width: 768px) {
