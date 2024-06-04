@@ -13,14 +13,7 @@
       </li>
 
       <li class="list-item">
-        <a @click="showNav = !showNav" href="#trainer">
-          <span class="material-symbols-outlined icons"> shopping_cart </span>
-          <span class="link-name">Shop</span>
-        </a>
-      </li>
-
-      <li class="list-item">
-        <a @click="showNav = !showNav" href="#">
+        <a @click="showNav = !showNav" href="/about">
           <span class="material-symbols-outlined icons"> search </span>
           <span class="link-name">About</span>
         </a>

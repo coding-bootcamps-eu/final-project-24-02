@@ -4,9 +4,7 @@
     <nav>
       <router-link to="/"> Home </router-link>
 
-      <router-link to="/"> Shop </router-link>
-
-      <router-link to="/"> About </router-link>
+      <router-link to="/about"> About </router-link>
 
       <router-link to="/offer"> Price </router-link>
 
@@ -44,7 +42,7 @@ export default {}
 nav a {
   position: relative;
   color: var(--text);
-  margin: 0.5rem;
+  margin: 1rem;
   font-size: 1.4rem;
   cursor: pointer;
 }
